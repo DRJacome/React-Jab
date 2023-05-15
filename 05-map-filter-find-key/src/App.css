@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+  font-family: 'Montserrat', 'sans-serif';
+  font-weight: bold;
+}
+
+body {
+  margin: 20px;
+}
+
+/* ACTIVIDAD 1 */
+
+h1 {
+  width: 100%;
+}
+
+.caja {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.tarjetaRey {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  width: 20%;
+  margin: 10px;
+}
+
+.rojo {
+  color: red;
+}
+
+img {
+  width: 100%;
+}
+
+/* ACTIVIDAD 2 */
+.cuadroRey {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.botonBorrar {
+  margin: 10px;
+}
+
+.numero {
+  user-select: none;
+}

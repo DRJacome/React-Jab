@@ -1,0 +1,14 @@
+input {
+  width: 30px;
+}
+
+button {
+  width: 20px;
+  padding: 0;
+  margin: 2px;
+}
+
+.fecha, span {
+  padding: 0 3px;
+  font-size: 2rem;
+}

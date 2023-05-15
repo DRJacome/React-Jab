@@ -1,0 +1,27 @@
+.reyes img{
+  width: 30%;
+  margin-bottom: 25px;
+}
+
+nav {
+  background-color: silver;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+div {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1em;
+  padding: 7px 10px 12px;
+  color: black;
+}
+
+.activo {
+  background-color: black;
+  color: white;
+}

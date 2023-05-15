@@ -1,0 +1,81 @@
+/* .App {
+  display: flex;
+  height: calc(100vh - 40px);
+}
+
+.hijo {
+  width: 33.3%;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.colores {
+  display: flex;
+}
+
+.color {
+  width: 22px;
+  height: 22px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor:pointer;
+}
+
+.color:nth-child(1) {
+  background-color: #4285f4;
+}
+
+.color:nth-child(2) {
+  background-color: #ea4335;
+}
+
+.color:nth-child(3) {
+  background-color: #fbbc05;
+}
+
+.color:nth-child(4) {
+  background-color: #34a853;
+}
+ */
+/* EJERCICIO */
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.idiomas {
+  display: flex;
+  justify-content: center;
+}
+
+.bandera {
+  width: 75px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.botones {
+  text-align: center;
+}
+
+.botones button {
+  text-align: center;
+  background-color: white;
+  padding: 5px 8px;
+  margin: 10px;
+  border: 1px dotted black;
+  border-radius: 5px;
+  color: white;
+  background-color: teal;
+  font-size: 1.05em;
+}
+
+.profesora, .ubicacion {
+  width: 320px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: teal;
+  padding-bottom: 15px;
+  color: white;
+  margin: auto;
+}
