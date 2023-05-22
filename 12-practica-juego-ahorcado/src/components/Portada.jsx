@@ -6,7 +6,8 @@ const Portada = () => {
 
   return (
     <>
-      <h1>BIENVENID@</h1>
+      <h1>BIENVENID@!</h1>
+      <h2>Pulsa en el botón de abajo para empezar a jugar.</h2>
       <button className='boton' onClick={() => navegacion("/juego")}>Jugar</button>
     </>
   )
