@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+
+body, button {
+  font-family: 'Montserrat', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  margin-bottom: 2px;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.cadaRey {
+  border: 1px solid black;
+  padding-bottom: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.menu {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.cajaVotacion {
+  background-color: #303030;
+  display: inline-block;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.votacion {
+  color: white;
+  font-size: 1.8em;
+  margin: 4px 0 7px;
+  font-weight: bold;
+}
+
+.rojo {
+  color: red;
 }
