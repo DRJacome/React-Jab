@@ -1,0 +1,22 @@
+.dias {
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  width: 50%;
+}
+
+.oferta {
+  border: 1px dotted grey;
+  border-radius: 10px;
+  text-align: center;
+  width: 50%;
+}
+
+.oferta img {
+  width: 65px;
+  margin: 12px 15px;
+}
