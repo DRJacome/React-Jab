@@ -1,0 +1,54 @@
+body {
+  background-color: grey;
+}
+
+.container {
+  border-bottom: solid black;
+  border-left: solid black;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 200px;
+}
+
+.containerGrande {
+  width: 800px;
+}
+
+.barra {
+  width: 90px;
+  height: 1px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  overflow: hidden;
+}
+
+.rojo {
+  background-color: crimson;
+}
+
+.animar {
+  /* Si se quiere modificar la animación, no se debe aplicar el valor "forwards". */
+  animation: animarBarra 20s infinite ease-in-out /* forwards */;
+  animation-play-state: running;
+}
+
+.parar {
+  animation-play-state: paused;
+}
+
+/* NOTA: var(--altura) es una variable de CSS, no de REACT. */
+@keyframes animarBarra {
+  0% {
+    height: 0px;
+  }
+
+  50% {
+    height: var(--altura);
+  }
+
+  100% {
+    height: 10px;
+  }
+}
