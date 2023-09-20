@@ -4,7 +4,7 @@ function App() {
   const [ancho, setAncho] = useState(1)
   const [monedas, setMonedas] = useState(1)
   const [tiradas, setTiradas] = useState(1)
-  const [premio, setPremio] = useState("Empiezas con una moneda y un ticket de tirada. Selecciona la potencia con la que quieres lanzar la ruleta y ganar monedas.")
+  const [premio, setPremio] = useState("Selecciona la potencia con la que quieres lanzar la ruleta y ganar monedas.")
   const [rotacion, setRotacion] = useState(0)
   const [situacion, setSituacion] = useState(0)
   const xRoja = './assets/x_roja.png'
@@ -13,7 +13,7 @@ function App() {
 
   const lanzar = () => {
     if (barraRef.current) {
-      setTiradas(-1)
+      setTiradas(tiradas - 1)
       barraRef.current.classList.toggle('paradaBarraPotencia');
       const potenciaSeleccionada = barraRef.current.getBoundingClientRect().width;
       setAncho(potenciaSeleccionada)
@@ -68,7 +68,7 @@ function App() {
         setTiradas(tiradas + 1)
         break;
       default:
-        setPremio('Default')
+        setPremio(`Has ganado ${monedas}. Fin del juego.`)
         break
     }
   }
@@ -76,8 +76,7 @@ function App() {
   const reiniciar = () => {
     setMonedas(1)
     setTiradas(1)
-    setPremio("Empiezas con una moneda y un ticket de tirada. Selecciona la potencia con la que quieres lanzar la ruleta y ganar monedas.")
-    setRotacion(0)
+    setPremio("Selecciona la potencia con la que quieres lanzar la ruleta y ganar monedas.")
     setSituacion(0)
   }
   return (
@@ -98,6 +97,11 @@ function App() {
         }
 
       </div>
+      <div className='titulo'>
+        <h1>Ruleta de la fortuna</h1>
+        <h3>Empiezas con una moneda y un ticket de tirada. Las casillas de color dan moneda y ticket;
+          las blancas sólo dan moneda.</h3>
+      </div>
       <div className='tablero'>
         <div className='ruleta' style={{
           backgroundImage: `url('./assets/ruleta.png')`,
@@ -107,7 +111,7 @@ function App() {
           onTransitionEnd={posicionTirada}>
         </div>
         <div className='premio'>
-          <h3>{premio}</h3>
+          <h3 className='letreroPremio'>{premio}</h3>
         </div>
         <div className='lanzador'>
           {situacion === 0 &&
@@ -118,6 +122,7 @@ function App() {
         </div>
         <div className='barraInferior'>
           {tiradas > 0 && <button className='lanzar' onClick={lanzar}>Lanzar</button>}
+          {tiradas === 0 && <button className='reiniciar' onClick={reiniciar}>Reiniciar</button>}
           {situacion === 2 && <h1>No te quedan más tiradas. Has ganado {monedas} monedas.</h1>}
         </div>
         <div className='marcador'>

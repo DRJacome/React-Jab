@@ -22,6 +22,15 @@ body {
   width: 40px;
 }
 
+.titulo {
+  text-align: center;
+}
+
+.titulo h3 {
+  margin: 0 auto;
+  width: 60%;
+}
+
 .tablero {
   position: relative;
   margin: 10px auto 0;
@@ -50,8 +59,10 @@ img {
   width: 100%;
 }
 
-.premio {
+.letreroPremio {
   animation: fadein 1.5s;
+  border-radius: 30px;
+  padding: 5px;
 
 }
 
@@ -106,4 +117,34 @@ img {
   100% {
     width: 0%;
   }
+}
+
+.lanzar, .reiniciar {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 20px;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.lanzar:hover, .reiniciar:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.lanzar:active, .reiniciar:active {
+  transform: scale(0.95);
 }
